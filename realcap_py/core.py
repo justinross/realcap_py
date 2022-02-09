@@ -12,8 +12,8 @@ class RCClient:
             self.id = str(uuid.uuid1())
         self.rc_binary_path = rc_binary_path
         print("launching named instance " + instance_name)
-        if not self.check_for_instance:
-            self.launch_named_instance(instance_name)
+        # if not self.check_for_instance:
+        self.launch_named_instance(instance_name)
 
     def execute_rc_commands(self, commands):
         prepared_commands = []
